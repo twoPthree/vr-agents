@@ -12,4 +12,4 @@ This repository demonstrates multi‑agent flows with Realtime voice agents. We 
 - Shapes, colors and positions returned by the agent are metaphors for basic data structures in this world.
 - Entities may include an `animation` component to showcase simple movement.
 
-Future iterations can expand the agent's tools to manipulate existing objects and orchestrate more complex flows.
+Future iterations can expand the agent's tools to manipulate existing objects and orchestrate more complex flows

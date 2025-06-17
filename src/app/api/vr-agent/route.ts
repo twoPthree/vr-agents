@@ -4,6 +4,7 @@ import { z } from 'zod';
 
 const createEntityTool = tool({
   name: 'createEntity',
+
   description:
     'Create an A-Frame entity. Position is an "x y z" string. Optionally provide an animation component.',
   parameters: z.object({

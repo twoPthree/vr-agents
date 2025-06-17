@@ -7,8 +7,9 @@ This repository demonstrates multi‑agent flows with Realtime voice agents. We 
 - Use `npm run build` to ensure the Next.js app compiles before committing.
 
 ## VR Agent Showcase
-- New API route `/api/vr-agent` exposes an example of using `@openai/agents` to translate text prompts into A‑Frame entities.
-- Client code under `src/app/vr/` renders these entities. Each prompt results in a new primitive added to the scene.
+- API route `/api/vr-agent` uses `@openai/agents` to translate text prompts into A‑Frame entities.
+- Client code under `src/app/vr/` renders these entities. Each prompt adds a new primitive to the scene.
 - Shapes, colors and positions returned by the agent are metaphors for basic data structures in this world.
+- Entities may include an `animation` component to showcase simple movement.
 
-Future work can expand the agent's tools to animate or manipulate objects and integrate more complex workflows.
+Future iterations can expand the agent's tools to manipulate existing objects and orchestrate more complex flows

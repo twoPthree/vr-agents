@@ -29,7 +29,12 @@ export default function VrPage() {
         <a-camera></a-camera>
       </a-entity>
       ${objects
-        .map(o => `<a-entity geometry="primitive: ${o.shape}" material="color: ${o.color}" position="${o.position}"></a-entity>`)
+        .map(
+          o =>
+            `<a-entity geometry="primitive: ${o.shape}" material="color: ${o.color}" position="${o.position}" ${
+              o.animation ? `animation="${o.animation}"` : ''
+            }></a-entity>`,
+        )
         .join('')}
     </a-scene>
   `

@@ -64,7 +64,7 @@ export const salesAgent = new RealtimeAgent({
         required: ['item_id'],
         additionalProperties: false,
       },
-      execute: async (input: any) => ({ success: true }),
+      execute: async (input: any) => ({ success: true, item: input.item_id }),
     }),
 
     tool({
@@ -90,7 +90,7 @@ export const salesAgent = new RealtimeAgent({
         required: ['item_ids', 'phone_number'],
         additionalProperties: false,
       },
-      execute: async (input: any) => ({ checkoutUrl: 'https://example.com/checkout' }),
+      execute: async (input: any) => ({ checkoutUrl: 'https://example.com/checkout', items: input.item_ids }),
     }),
   ],
 
